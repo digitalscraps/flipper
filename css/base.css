@@ -1,0 +1,55 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: #fff;
+  font-size: 16px;
+	margin: 0 auto;
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.5; 
+  max-width: 1440px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+a {
+  color: #201833;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .875rem;
+}
+img {
+  width: 100%;
+}
+
+/* --------------------------
+  Element Styles
+--------------------------- */
+header {
+  margin: 2.25rem 2rem 0 2rem;
+  padding-bottom: 160px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+ padding-right: 0.125rem;
+ margin-right: 0.3125rem;
+}
+
+main {
+  margin: 0 2rem;
+  background-color: lightblue;
+}
+

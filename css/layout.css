@@ -1,24 +1,88 @@
 /* --------------------------
-  Navbar (nb) Flex Container
+  Basic Flex Container Styles
 --------------------------- */
-.l-nb-fc {
+.l-fc {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
-.l-nb-start {
-  align-self: flex-start;
+
+.l-fc-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------
+  Navbar (nb) Flex Container
+--------------------------- */
+.l-nb-baseline {
+  align-self: baseline;
+}
+.l-nb-end {
+  align-self: flex-end;
 }
 
 
 /* --------------------------
   Media Gallery
 --------------------------- */
-.l-m-fc-col {
-  display: flex;
+.l-mg-row a {
+  padding: 0 0 0 1rem;
+}
+
+@media screen and (min-width: 768px){
+  .l-mg-row {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+  .l-mg-row a {
+    flex: 1 2 auto;
+    padding: 0.25rem;
+    }
+  }
+
+  @media screen and (min-width: 968px){
+      .l-mg-row a {
+      width: 50%;
+      max-width: 1300px;
+      }
+  }
+
+/* --------------------------
+  About Page (ap) Info Grid and Flex
+--------------------------- */
+.l-ap-gc {
+  display: grid;
+  grid-template-columns: 1fr [h] 80% 1fr;
+  grid-template-rows: [p] auto auto;
+  grid-template-areas: 
+  ". h ."
+  ". p .";
+  grid-column-gap: 0px;
+  grid-row-gap: 18px;
+}
+
+.l-ap-gi-h {
+  grid-area: h;
+}
+.l-ap-gi-p {
+  grid-area: p;
+  align-self: center;
+}
+
+/* --------------------------
+  About Page Icon Nav (ic) Flex
+--------------------------- */
+.l-ic-end {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end
+}
+.l-ic-col {
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
 }
-.img {
-  width: 100%;
-}
+
+

@@ -25,8 +25,17 @@
 /* --------------------------
   Media Gallery
 --------------------------- */
-.l-mg-row a {
-  padding: 0 0 0 1rem;
+.l-mg-row a img {
+width: 100%;
+}
+
+.l-mg-item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin: .32rem .16rem 0 .16rem;
 }
 
 @media screen and (min-width: 768px){
@@ -36,15 +45,14 @@
     align-items: flex-start;
     align-content: center;
   }
-  .l-mg-row a {
+  .l-mg-item {
     flex: 1 2 auto;
-    padding: 0.25rem;
     }
   }
 
   @media screen and (min-width: 968px){
-      .l-mg-row a {
-      width: 50%;
+      .l-mg-item {
+      width: 45%;
       max-width: 1300px;
       }
   }

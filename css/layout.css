@@ -14,6 +14,11 @@
 /* --------------------------
   Navbar (nb) Flex Container
 --------------------------- */
+.l-nb  a {
+  text-decoration: none;
+  position: relative;
+}
+
 .l-nb-baseline {
   align-self: baseline;
 }
@@ -35,18 +40,26 @@ width: 100%;
   display: flex;
 	flex-direction: column;
 	justify-content: center;
-  margin: .32rem .16rem 0 .16rem;
+  margin-bottom: 1.875rem;
 }
 
+
 @media screen and (min-width: 768px){
-  .l-mg-row {
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-  }
-  .l-mg-item {
-    flex: 1 2 auto;
+    .l-mg-row {
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: center;
+    }
+    .l-mg-item {
+      flex: 1 2 auto;
+      margin-bottom: 1.875rem;
+    }
+    .l-mg-item:nth-child(odd) {
+    margin-right: .9375rem;
+    }
+    .l-mg-item:nth-child(even) {
+    margin-left: .9375rem;
     }
   }
 
